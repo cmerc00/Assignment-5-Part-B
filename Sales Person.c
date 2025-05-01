@@ -2,7 +2,7 @@
 //  Sales Person.cpp
 //  Assignment #5 Part B
 //
-//  Created by Cherelle Mercadel on 4/30/25.
+//  Created by Cherelle Mercadel on 4/24/25.
 //
 
 #include "Sales Person.h"
