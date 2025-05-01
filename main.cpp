@@ -7,11 +7,10 @@
 
 #include <iostream>
 #include <iomanip>
-//#include "Worker.hpp"
-#include "Lawyer.hpp"
-#include "Doctor.hpp"
-#include "SoftWare Engineers.hpp"
-#include "Sales Person.hpp"
+#include "Lawyer.h"
+#include "Doctor.h"
+#include "SoftWare Engineers.h"
+#include "Sales Person.h"
 
 
 using namespace std;
