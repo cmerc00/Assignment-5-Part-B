@@ -1,0 +1,67 @@
+//
+//  main.cpp
+//  Assignment #5 Part B
+//
+//  Created by Cherelle Mercadel on 4/24/25.
+//
+
+#include <iostream>
+#include <iomanip>
+//#include "Worker.hpp"
+#include "Lawyer.hpp"
+#include "Doctor.hpp"
+#include "SoftWare Engineers.hpp"
+#include "Sales Person.hpp"
+
+
+using namespace std;
+
+void printSalary(Worker &);
+void printName(Worker &);
+
+int main() {
+   
+    Doctor doc;
+    cout<< "Doctor"<<endl;
+    doc.setName("Dazy");
+    doc.setSalary(294000);
+    printName(doc);
+    printSalary(doc);
+    
+    Lawyer law;
+    cout << "Lawyer"<<endl;
+    law.setName("Lary");
+    law.setSalary(144230);
+    printName(law);
+    printSalary(law);
+    
+    SoftEngineer soft;
+    cout << "Software Engineers"<<endl;
+    soft.setName("Suzan");
+    soft.setSalary(108080);
+    printName(soft);
+    printSalary(soft);
+    
+    Sales sale;
+    cout << "Sales Person"<<endl;
+    sale.setName("Samuel");
+    sale.setSalary(64310);
+    printName(sale);
+    printSalary(sale);
+    
+
+    
+    
+    return 0;
+}
+void printName(Worker &printName)
+{
+    cout << printName.getName()<<endl;
+}
+void printSalary(Worker &printSal)
+{
+    cout << setprecision(2)<< fixed;
+    cout << "Salary: $"<<printSal.getSalary()<<endl;
+
+    cout << "Salary per week: $"<< printSal.salaryPerWeek()<<"\n\n";
+}
